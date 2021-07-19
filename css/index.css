@@ -3,7 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.direction{
+  direction: rtl;
+}
 .header {
+
 }
 .header .detail {
   background-color: #282b2e;
@@ -18,10 +22,6 @@
   width: 23px;
   height: 23px;
 }
-#facebook-icon {
-  width: 25px;
-  height: 25px;
-}
 .icons-size {
   width: 25px;
   height: 25px;
@@ -30,3 +30,41 @@
   padding-left: 10px;
   border-left: 2px solid #444f59;
 }
+.social-media p{
+  color: white;
+  display: inline;
+}
+/*start date and time */
+.date-time{
+  color: white;
+}
+.date-time p{
+  padding: 0 10px;
+  margin-top:10px;
+}
+.time{
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+
+}
+/* end date and time */
+/* start navbar */
+#navbar{
+  background-color: #1172d3;
+  direction: rtl;
+}
+#navbar .nav-link{
+  color: white;
+  padding: 15px;
+}
+/* start button */
+#button{
+  background-color: #46c83c;
+  color: white;
+  border-radius: 30px;
+}
+#button i{
+  font-size: 22px;
+}
+/* end button */
+/* end navbar */
