@@ -1,5 +1,32 @@
-*{
-    margin: 0 ;
-    padding: 0 ;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+}
+.header .detail {
+  background-color: #282b2e;
+}
+.social-media{
+    margin-left: 20px;
+}
+#google-icon {
+  margin-right: 6px;
+}
+#skype-icon {
+  width: 23px;
+  height: 23px;
+}
+#facebook-icon {
+  width: 25px;
+  height: 25px;
+}
+.icons-size {
+  width: 25px;
+  height: 25px;
+}
+#phone-icon {
+  padding-left: 10px;
+  border-left: 2px solid #444f59;
 }
