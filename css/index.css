@@ -65,3 +65,17 @@
 }
 /* end button */
 /* end navbar */
+/* start widget */
+.widget p{ 
+  color: #7f7f7f;
+}
+.widget .card:hover{
+  background-color: #f7f7f7;
+
+}
+/* end widget */
+/* start paragraph */
+.paragraph{
+  background-color: #f4f6f8;
+}
+/* end paragraph */
