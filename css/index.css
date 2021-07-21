@@ -79,3 +79,10 @@
   background-color: #f4f6f8;
 }
 /* end paragraph */
+/* start media parent */
+#media-parent{
+  background-image: url('../img/man-station.jpg');
+  background-size: cover;
+  color: white;
+}
+/* end media parent */
