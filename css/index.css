@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.c-w{
+  color: white;
+}
+.xl{
+  font-size: xx-large;
+}
 .direction{
   direction: rtl;
 }
