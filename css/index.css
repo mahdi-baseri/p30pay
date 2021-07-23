@@ -15,6 +15,9 @@
 .small{
   font-size: small;
 }
+.medium{
+  font-size: medium;
+}
 .direction{
   direction: rtl;
 }
