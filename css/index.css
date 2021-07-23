@@ -18,6 +18,9 @@
 .medium{
   font-size: medium;
 }
+.large{
+  font-size: large;
+}
 .direction{
   direction: rtl;
 }
