@@ -95,3 +95,8 @@
   color: white;
 }
 /* end media parent */
+/* start choice */
+.choice{
+  background-image: url(../img/footer_bg.jpg);
+}
+/* end choice */
