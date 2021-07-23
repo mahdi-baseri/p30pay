@@ -12,6 +12,9 @@
 .xl{
   font-size: xx-large;
 }
+.small{
+  font-size: small;
+}
 .direction{
   direction: rtl;
 }
