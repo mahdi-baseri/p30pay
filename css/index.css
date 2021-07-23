@@ -15,8 +15,8 @@
 .small{
   font-size: small;
 }
-.medium{
-  font-size: medium;
+.dr{
+  direction: rtl;
 }
 .large{
   font-size: large;
@@ -107,5 +107,6 @@
 /* start choice */
 .choice{
   background-image: url(../img/footer_bg.jpg);
+  background-size: cover;
 }
 /* end choice */
