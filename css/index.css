@@ -18,6 +18,9 @@
 .dr{
   direction: rtl;
 }
+.hover-blue:hover{
+  background-color: #1671cb !important; 
+}
 .large{
   font-size: large;
 }
