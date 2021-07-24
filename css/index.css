@@ -18,8 +18,14 @@
 .dr{
   direction: rtl;
 }
+.hover-gray:hover{
+  background-color: #444f59 !important;
+}
 .hover-blue:hover{
   background-color: #1671cb !important; 
+}
+.hover-none:hover{
+  background-color: transparent !important;
 }
 .large{
   font-size: large;
@@ -73,7 +79,6 @@
 }
 #navbar .nav-link{
   color: white;
-  padding: 15px;
 }
 /* start button */
 #button{
