@@ -113,4 +113,7 @@
   background-image: url(../img/footer-background.jpg);
   background-size: cover;
 }
+.h-100{
+  height: 100%;
+}
 /* end choice */
