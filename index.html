@@ -40,7 +40,7 @@
   <body>
     <div class="container-fluid">
       <!-- start header -->
-      <div class="header">
+      <div class="header" id="header">
         <div
           class="
             detail
@@ -684,7 +684,7 @@
       <!-- end brands -->
 
       <!-- start footer -->
-      <div class="footer p-5">
+      <div class="footer p-5 position-relative">
         <div class="footer-header d-flex row">
           <div class="col-xl-4 d-flex flex-column align-items-end mt-3">
             <h4 class="text-light mb-5">نماد های اعتماد</h4>
@@ -785,10 +785,11 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom d-flex justify-content-center">
           <p class="text-center text-light mt-4">تمامی حقوق این سایت برای شرکت <span class="text-success">معینیوآی آر </span>محفوظ است و هرگونه کپی برداری از طرح و مطلب سایت پیگرد قانونی دارد </p>
         </div>
-      </div>
+        <button class="btn bg-success position-absolute py-2" data-target="header" id="footer-btn"><img class="img-fluid" src="img/up-arrow.svg" alt="" width="35px" height="35px"></button>
+      </div> 
       <!-- end footer -->
     </div>
     <!-- end container -->
