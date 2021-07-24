@@ -109,4 +109,8 @@
   background-image: url(../img/footer_bg.jpg);
   background-size: cover;
 }
+.footer{
+  background-image: url(../img/footer-background.jpg);
+  background-size: cover;
+}
 /* end choice */
