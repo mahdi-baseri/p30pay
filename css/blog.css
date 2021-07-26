@@ -30,6 +30,9 @@ body a {
 .w-100 {
   width: 100%;
 }
+.circle{
+  border-radius: 50% !important;
+}
 .hover-gray:hover {
   background-color: #444f59 !important;
 }
