@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  text-align: right !important;
+}
 .z-1{
   z-index: 1;
 }
@@ -135,3 +138,8 @@
 }
 /* end footer */
 
+
+@media screen and (max-width: 700px) {
+  body {
+    text-align: center !important;
+  }
