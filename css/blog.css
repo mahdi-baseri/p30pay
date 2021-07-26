@@ -110,7 +110,12 @@
   .aside{
     width: 35%;
   }
-
+  #d-none{
+    display: none !important;
+  }
+  #d-none-r{
+    display: block !important;
+  }
 
 
 
@@ -132,7 +137,12 @@
       text-align: center !important;
       
     }
-    
+    #d-none{
+      display: block !important;
+    }
+    #d-none-r{
+      display: none !important;
+    }
   }
   
   
