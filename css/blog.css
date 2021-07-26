@@ -12,7 +12,7 @@
   .xl{
     font-size: xx-large;
   }
-  .small{
+  .sm{
     font-size: small;
   }
   .dr{
@@ -97,6 +97,11 @@
   }
   /* end button */
   /* end navbar */
+
+  .group ul{
+    list-style-type: disc;
+    color: blue;
+  }
   
   /* start footer */
 .footer{
