@@ -42,6 +42,9 @@ body a {
 .hover-none:hover {
   background-color: transparent !important;
 }
+.font-sm{
+  font-size: medium !important;
+}
 .large {
   font-size: large;
 }
@@ -145,5 +148,8 @@ body a {
   }
   #d-none-r {
     display: none !important;
+  }
+  .font-sm{
+    font-size: 10px !important;
   }
 }
