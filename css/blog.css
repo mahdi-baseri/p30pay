@@ -112,12 +112,6 @@ body a {
 .group ul {
   color: blue;
 }
-.content {
-  width: 75%;
-}
-.aside {
-  width: 25%;
-}
 #d-none {
   display: none !important;
 }
@@ -137,19 +131,10 @@ body a {
   body {
     text-align: center !important;
   }
-  .content {
-    width: 55%;
-  }
-  .aside {
-    width: 45%;
-  }
   #d-none {
     display: flex !important;
   }
   #d-none-r {
     display: none !important;
-  }
-  .font-sm{
-    font-size: 10px !important;
   }
 }
