@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(231, 228, 228, 0.371) !important;
+}
+.gray{
+    background-color: lightgray !important;
+}
+.gray:hover{
+    background-color: gray !important;
+}
