@@ -1,39 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page page</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/css/page.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/page.css"
+    />
 
-     <!-- font awesome -->
-     <script
-     src="https://kit.fontawesome.com/246461d77d.js"
-     crossorigin="anonymous"
-   ></script>
-   <!-- bootstrap -->
-   <!-- Latest compiled and minified CSS -->
-   <link
-     rel="stylesheet"
-     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-   />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/246461d77d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-   <!-- jQuery library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-   <!-- Popper JS -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-   <!-- Latest compiled JavaScript -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <!-- icons -->
-   <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-   />
-</head>
-<body>
-    
-</body>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- start container -->
+    <div class="container-fluid">
+         <!-- start header -->
+      <div class="header" id="header">
+        <div
+          class="
+            detail
+            d-flex
+            justify-content-around
+            align-items-center
+            flex-wrap
+          "
+        >
+          <div class="social-media mr-5">
+            <a href="#"
+              ><img
+                class="icons-size"
+                src="img/facebook-icon.jpg"
+                alt="facebook-icon"
+            /></a>
+            <a href="#"
+              ><img id="skype-icon" src="img/skype-icon.jpg" alt="skype-icon"
+            /></a>
+            <a href="#"
+              ><img
+                class="icons-size"
+                src="img/telegram-icon.jpg"
+                alt="telegram-icon"
+            /></a>
+            <a href="#"
+              ><img
+                id="google-icon"
+                class="icons-size"
+                src="img/google-icon.png"
+                alt="google-icon"
+            /></a>
+            <a href="#"
+              ><img id="phone-icon" src="img/phone.png" alt="phone-icon"
+            /></a>
+            <p class="ml-2">0938 788 0262</p>
+          </div>
+          <div class="date-time d-flex flex-wrap flex-row-reverse mr-5">
+            <p>امروز جمعه 24 دیماه 1395</p>
+            <p class="time">21:59</p>
+            <p>BTC/UDS</p>
+            <p>727.65$</p>
+          </div>
+        </div>
+      </div>
+      
+      <nav
+      id="navbar"
+      class="navbar navbar-expand-xl navbar-dark align-content-center p-3"
+    >
+      <div class="container mx-auto">
+        <a href="#" class="navbar-brand"
+          ><img class="img-fluid" src="img/header-logo.jpg" alt="logo-brand"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#menu-list"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-list">
+          <ul class="navbar-nav align-content-end">
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link mx-1 hover-gray rounded mr-2 p-3"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link mx-1 dropdown-toggle hover-gray rounded p-3"
+                data-toggle="dropdown"
+                >قوانین</a
+              >
+              <div class="dropdown-menu dropdown-menu-right bg-dark">
+                <a href="#" class="dropdown-item dr text-light hover-none"
+                  >قوانین کلی سایت</a
+                >
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dr text-light hover-none"
+                  >قوانین خرید و فروش وبمانی</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-1 hover-gray rounded p-3"
+                >سوالات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link mx-1 hover-gray rounded p-3"
+                >متداول</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link mx-1 hover-gray rounded p-3"
+                >ارتباط با مدیریت
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link mx-1 hover-gray rounded p-3"
+                >بلاگ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="blog-single.html" class="nav-link mx-1 hover-gray rounded p-3"
+                >درباره ما
+              </a>
+            </li>
+            <a
+              href="login.html"
+              id="button"
+              class="btn my-auto mr-1"
+              style="height: 50px"
+            >
+              پورتال مشتریان
+              <i class="bi bi-person"></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <!-- end header -->
+
+      <!-- start main -->
+      <div class="main"></div>
+      <!-- end main -->
+
+      
+    </div>
+    <!-- end container -->
+  </body>
 </html>
