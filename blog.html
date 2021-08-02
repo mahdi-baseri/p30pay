@@ -48,12 +48,13 @@
           class="
             detail
             d-flex
-            justify-content-around
+            justify-content-between
             align-items-center
             flex-wrap
+            container
           "
         >
-          <div class="social-media mr-5">
+          <div class="social-media">
             <a href="page-404.html"
               ><img
                 class="icons-size zoom"
@@ -89,25 +90,34 @@
             /></a>
             <p class="ml-2">0938 788 0262</p>
           </div>
-          <div class="date-time d-flex flex-wrap flex-row-reverse mr-5">
+          <div class="date-time d-flex flex-wrap align-items-center">
             <p>امروز جمعه 24 دیماه 1395</p>
+            <div class="d-flex">
             <p class="time">21:59</p>
-            <p>BTC/UDS</p>
-            <p>727.65$</p>
+          </div>
+            <div class="d-flex">
+              <p>BTC/UDS</p>
+              <p>727.65$</p>
+              <img
+                src="img/triangle-icon.svg"
+                alt="triangle-icon"
+                width="25px"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <nav
         id="navbar"
-        class="navbar navbar-expand-xl navbar-dark align-content-center p-3"
+        class="navbar navbar-expand-xl navbar-dark align-content-center p-0"
       >
-        <div class="container mx-auto">
-          <a href="page-404.html" class="navbar-brand"
+        <div class="container mx-auto m-none">
+          <a href="page-404.html" class="navbar-brand ml-2"
             ><img class="img-fluid" src="img/header-logo.jpg" alt="logo-brand"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler m-none"
             type="button"
             data-toggle="collapse"
             data-target="#menu-list"
@@ -116,55 +126,64 @@
           </button>
           <div class="collapse navbar-collapse" id="menu-list">
             <ul class="navbar-nav align-content-end">
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="index.html"
-                  class="nav-link mx-1 hover-gray rounded mr-2 p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >صفحه اصلی</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <a href="page-404.html"
-                  class="nav-link mx-1 dropdown-toggle hover-gray rounded p-3"
+              <li class="nav-item dropdown hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 dropdown-toggle rounded p-none"
                   data-toggle="dropdown"
                   >قوانین</a
                 >
                 <div class="dropdown-menu dropdown-menu-right bg-dark">
-                  <a href="page-404.html" class="dropdown-item dr text-light hover-none"
+                  <a
+                    href="page-404.html"
+                    class="dropdown-item dr text-light hover-none text-right"
                     >قوانین کلی سایت</a
                   >
                   <div class="dropdown-divider"></div>
-                  <a href="page-404.html" class="dropdown-item dr text-light hover-none"
+                  <a
+                    href="page-404.html"
+                    class="dropdown-item dr text-light hover-none"
                     >قوانین خرید و فروش وبمانی</a
                   >
                 </div>
               </li>
-              <li class="nav-item">
-                <a href="page-404.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >سوالات</a
                 >
               </li>
-              <li class="nav-item">
-                <a href="page-404.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >متداول</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="contact.html"
-                  class="nav-link mx-1 hover-gray rounded p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >ارتباط با مدیریت
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a href="blog.html" class="nav-link mx-1 hover-gray rounded p-none"
                   >بلاگ</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="page-404.html"
-                  class="nav-link mx-1 hover-gray rounded p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >درباره ما
                 </a>
               </li>
@@ -182,6 +201,14 @@
         </div>
       </nav>
       <!-- end header -->
+      <div class="bg-white border-bottom">
+      <div class="d-flex dr bg-white py-2 container"> 
+        <i class="fa fa-map-marker-alt my-auto ml-2" style="color: gray;"></i>
+        <p class="under-header my-auto">صفحه درحال سایت میباشد</p>
+        <p class="under-header my-auto">موقعیت شما</p>
+        <p></p>
+      </div>
+      </div>
 
       <!-- start main -->
       <form
@@ -190,7 +217,7 @@
         class="
           container
           mx-auto
-          
+          bg-white
           mt-3
           shadow
           px-3
@@ -217,9 +244,10 @@
             action="#"
             id="d-none-r"
             class="
+            bg-white
               form
               shadow
-              mt-2
+              my-2
               mb-1
               px-3
               p-1
@@ -239,7 +267,7 @@
             />
           </form>
           <!-- start group -->
-          <div class="group dr py-2 shadow">
+          <div class="group dr my-3 bg-white shadow">
             <div class="bg-dark p-2 d-flex">
               <i
                 class="fa fa-bars text-light my-auto ml-2"
@@ -269,7 +297,7 @@
           <!-- end group -->
 
           <!-- start favorite -->
-          <div class="shadow py-2">
+          <div class="shadow my-3 bg-white">
             <div class="bg-dark py-1 px-2 d-flex flex-row-reverse">
               <img
                 class="img-fluid my-auto ml-2"
@@ -293,9 +321,9 @@
                       >
                     </p>
                   </div>
-                  <a href="page-404.html" class="my-auto mx-2"
+                  <a href="page-404.html" class="fluid rounded-circle my-auto mx-2"
                     ><img
-                      class="rounded-circle zoom img-fluid"
+                      class=" zoom img-fluid"
                       width="70px"
                       height="70px"
                       src="img/blog-img/girl.png"
@@ -317,9 +345,9 @@
                     </p>
                   </div>
 
-                  <a href="page-404.html" class="mx-2 my-auto">
+                  <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
                     <img
-                      class="rounded-circle zoom img-fluid"
+                      class=" zoom img-fluid"
                       width="70px"
                       height="70px"
                       src="img/blog-img/bitcoin-2.png"
@@ -342,9 +370,9 @@
                     </p>
                   </div>
 
-                  <a href="page-404.html" class="mx-2 my-auto">
+                  <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
                     <img
-                      class="rounded-circle zoom img-fluid"
+                      class=" zoom img-fluid"
                       width="70px"
                       height="70px"
                       src="img/blog-img/workplace.png"
@@ -367,9 +395,9 @@
                     </p>
                   </div>
 
-                  <a href="page-404.html" class="mx-2 my-auto">
+                  <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
                     <img
-                      class="rounded-circle zoom img-fluid"
+                      class=" zoom img-fluid"
                       width="70px"
                       height="70px"
                       src="img/blog-img/bitcoin.png"
@@ -393,16 +421,16 @@
 
         <!-- start content -->
         <div class="content col-xl-9 w-100">
-          <div class="media-parent shadow pb-2 m-3">
+          <div class="media-parent shadow pb-2 m-3 bg-white">
             <div class="media-header bg-primary text-light p-2">
               <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
             </div>
             <div class="media row dr px-2 mt-2">
-              <img
+              <a href="page.html" class=" col-lg-2"><img
                 src="img/blog-img/first-img.jpg"
                 alt="first-img"
-                class="img-fluid col-lg-2"
-              />
+                class="img-fluid w-100"
+              /></a>
               <div
                 class="
                   media-body
@@ -418,13 +446,13 @@
                   مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
                   متخصصان را می طلبد
                 </p>
-                <div class="row mt-3">
+                <div class="row mt-3 dr">
                   <div
                     class="
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -441,7 +469,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -459,7 +487,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -476,7 +504,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -495,16 +523,17 @@
               </div>
             </div>
           </div>
-          <div class="media-parent shadow pb-2 m-3">
+          <div class="media-parent shadow pb-2 m-3 bg-white">
             <div class="media-header bg-primary text-light p-2">
-              <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
+              <p class="my-auto dr">چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی...</p>
             </div>
             <div class="media row dr px-2 mt-2">
+              <a href="page.html" class="col-lg-2">
               <img
                 src="img/blog-img/second-img.jpg"
                 alt="first-img"
-                class="img-fluid col-lg-2"
-              />
+                class="img-fluid w-100"
+              /></a>
               <div
                 class="
                   media-body
@@ -526,7 +555,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -543,7 +572,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -561,7 +590,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -578,7 +607,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -597,16 +626,17 @@
               </div>
             </div>
           </div>
-          <div class="media-parent shadow pb-2 m-3">
+          <div class="media-parent shadow pb-2 m-3 bg-white">
             <div class="media-header bg-primary text-light p-2">
-              <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
+              <p class="my-auto dr">چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی...</p>
             </div>
             <div class="media row dr px-2 mt-2">
+              <a href="page.html" class="col-lg-2">
               <img
                 src="img/blog-img/third-img.jpg"
                 alt="first-img"
-                class="img-fluid col-lg-2"
-              />
+                class="img-fluid w-100"
+              /></a>
               <div
                 class="
                   media-body
@@ -628,7 +658,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -645,7 +675,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -663,7 +693,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -680,7 +710,7 @@
                       d-flex
                       justify-content-center
                       align-items-center
-                      border-right
+                      border-none
                       mt-2
                       col-xl-2
                       flex-row-reverse
@@ -699,18 +729,18 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between mx-2">
             <ul class="pagination">
-              <li class="page-item sm">
-                <a href="page-404.html" class="page-link circle"><<</a>
+              <li class="page-item sm mx-1">
+                <a href="page-404.html" class="page-link circle hover-blue-gray text-light px-2"><<</a>
               </li>
-              <li class="page-item sm">
-                <a href="page-404.html" class="page-link circle">>></a>
+              <li class="page-item sm mx-1">
+                <a href="page-404.html" class="page-link circle px-2 hover-blue-gray text-light">>></a>
               </li>
             </ul>
-            <ul class="pagination">
+            <ul class="pagination dr">
               <li class="page-item mx-1"><a class="page-link" href="#">1</a></li>
-              <li class="page-item mx-1"><a class="page-link" href="#">2</a></li>
+              <li class="page-item mx-1 active"><a class="page-link" href="#">2</a></li>
               <li class="page-item mx-1"><a class="page-link" href="#">3</a></li>
               <li class="page-item mx-1"><a class="page-link" href="#">4</a></li>
               <li class="page-item mx-1">
@@ -762,26 +792,26 @@
           </div>
           <div class="d-flex flex-column align-items-end">
             <div class="d-flex my-1">
-              <p class="text-light">.قیمت محصولات سایت بروزسانی شدند</p>
-              <button class="btn btn-primary dr ml-2 h-100 p-0">
+              <p class="text-light p-sm">.قیمت محصولات سایت بروزسانی شدند</p>
+              <button class="btn btn-primary dr ml-2 p-sm-btn">
                 17 دیماه 1395
               </button>
             </div>
             <div class="d-flex my-1">
-              <p class="text-light">جرا احراز هویت ؟</p>
-              <button class="btn btn-primary dr ml-2 h-100 p-0">
+              <p class="text-light p-sm">جرا احراز هویت ؟</p>
+              <button class="btn btn-primary dr ml-2 p-sm-btn">
                 17 دیماه 1395
               </button>
             </div>
             <div class="d-flex my-1">
-              <p class="text-light">نحوه ی خرید و فروش پرفکت مانی</p>
-              <button class="btn btn-primary dr ml-2 h-100 p-0">
+              <p class="text-light p-sm">نحوه ی خرید و فروش پرفکت مانی</p>
+              <button class="btn btn-primary dr ml-2 p-sm-btn">
                 17 دیماه 1395
               </button>
             </div>
             <div class="d-flex my-1">
-              <p class="text-light">سوالات بیت کوینی</p>
-              <button class="btn btn-primary dr ml-2 h-100 p-0">
+              <p class="text-light p-sm">سوالات بیت کوینی</p>
+              <button class="btn btn-primary dr ml-2 p-sm-btn">
                 17 دیماه 1395
               </button>
             </div>
