@@ -42,11 +42,11 @@ body {
 .w-100{
   width: 100%;
 }
-.header .detail {
+.header {
   background-color: #282b2e;
 }
 .social-media{
-    margin-left: 20px;
+    margin: 0 40px !important;
 }
 #google-icon {
   margin-right: 6px;
@@ -70,6 +70,7 @@ body {
 /*start date and time */
 .date-time{
   color: white;
+  margin: 0 20px;
 }
 .date-time p{
   padding: 0 10px;
@@ -104,8 +105,12 @@ body {
 .widget p{ 
   color: #7f7f7f;
 }
+.widget .card{
+}
 .widget .card:hover{
   background-color: #f7f7f7;
+  border-bottom: 1px solid rgb(207, 205, 205) !important;
+
 
 }
 /* end widget */
@@ -150,5 +155,18 @@ body {
   .text-size{
     font-size: small;
     width: 100% !important;
+  }
+}
+@media screen and (max-width:992px) {
+  .social-media{
+    margin: 0 auto !important;
+  }
+  .date-time{
+    margin: 0 auto !important;
+  }
+  
+}@media screen and (max-width:500px){
+  .date-time div{
+    margin: 0 auto;
   }
 }
