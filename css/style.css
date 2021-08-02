@@ -26,6 +26,7 @@ body {
 }
 .hover-gray:hover {
   background-color: #444f59 !important;
+  cursor: pointer;
 }
 .hover-blue:hover {
   background-color: #1671cb !important;
@@ -157,7 +158,17 @@ body {
 #button i {
   font-size: 22px;
 }
+
 /* end button */
+.p-none{
+  padding: 15px !important;
+}
+.m-none{
+  margin: 0!important;
+}
+.p-sm{
+  font-size: medium !important;
+}
 
 /* start footer */
 .footer {
@@ -177,4 +188,25 @@ body {
     direction: rtl;
     text-align: justify !important;
   }
+  .p-sm{
+    font-size: 10px !important;
+    margin: auto 0;
+    direction: rtl;
+
+    
+  }
+  .p-sm-btn{
+    font-size:7px !important;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .p-none{
+    padding: 8px !important;
+  }
+  .m-none{
+    margin: 12px!important;
+  }
+  
+  
 }
