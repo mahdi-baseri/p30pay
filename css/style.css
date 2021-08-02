@@ -231,7 +231,14 @@ body {
     border-right: none !important;
   }
 }
-
+@media screen and (max-width: 992px) {
+  .social-media {
+    margin: 0 auto !important;
+  }
+  .date-time {
+    margin: 0 auto !important;
+  }
+}
 @media screen and (max-width:1200px) {
   .p-none{
     padding: 8px !important;
