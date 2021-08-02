@@ -42,18 +42,19 @@
   </head>
   <body>
     <div class="container-fluid">
-       <!-- start header -->
-       <div class="header" id="header">
+      <!-- start header -->
+      <div class="header" id="header">
         <div
           class="
             detail
             d-flex
-            justify-content-around
+            justify-content-between
             align-items-center
             flex-wrap
+            container
           "
         >
-          <div class="social-media mr-5">
+          <div class="social-media">
             <a href="page-404.html"
               ><img
                 class="icons-size zoom"
@@ -89,25 +90,34 @@
             /></a>
             <p class="ml-2">0938 788 0262</p>
           </div>
-          <div class="date-time d-flex flex-wrap flex-row-reverse mr-5">
+          <div class="date-time d-flex flex-wrap align-items-center">
             <p>امروز جمعه 24 دیماه 1395</p>
+            <div class="d-flex">
             <p class="time">21:59</p>
-            <p>BTC/UDS</p>
-            <p>727.65$</p>
+          </div>
+            <div class="d-flex">
+              <p>BTC/UDS</p>
+              <p>727.65$</p>
+              <img
+                src="img/triangle-icon.svg"
+                alt="triangle-icon"
+                width="25px"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <nav
         id="navbar"
-        class="navbar navbar-expand-xl navbar-dark align-content-center p-3"
+        class="navbar navbar-expand-xl navbar-dark align-content-center p-0"
       >
-        <div class="container mx-auto">
-          <a href="page-404.html" class="navbar-brand"
+        <div class="container mx-auto m-none">
+          <a href="page-404.html" class="navbar-brand ml-2"
             ><img class="img-fluid" src="img/header-logo.jpg" alt="logo-brand"
           /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler m-none"
             type="button"
             data-toggle="collapse"
             data-target="#menu-list"
@@ -116,55 +126,64 @@
           </button>
           <div class="collapse navbar-collapse" id="menu-list">
             <ul class="navbar-nav align-content-end">
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="index.html"
-                  class="nav-link mx-1 hover-gray rounded mr-2 p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >صفحه اصلی</a
                 >
               </li>
-              <li class="nav-item dropdown">
-                <a href="page-404.html"
-                  class="nav-link mx-1 dropdown-toggle hover-gray rounded p-3"
+              <li class="nav-item dropdown hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 dropdown-toggle rounded p-none"
                   data-toggle="dropdown"
                   >قوانین</a
                 >
                 <div class="dropdown-menu dropdown-menu-right bg-dark">
-                  <a href="page-404.html" class="dropdown-item dr text-light hover-none"
+                  <a
+                    href="page-404.html"
+                    class="dropdown-item dr text-light hover-none text-right"
                     >قوانین کلی سایت</a
                   >
                   <div class="dropdown-divider"></div>
-                  <a href="page-404.html" class="dropdown-item dr text-light hover-none"
+                  <a
+                    href="page-404.html"
+                    class="dropdown-item dr text-light hover-none"
                     >قوانین خرید و فروش وبمانی</a
                   >
                 </div>
               </li>
-              <li class="nav-item">
-                <a href="page-404.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >سوالات</a
                 >
               </li>
-              <li class="nav-item">
-                <a href="page-404.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a
+                  href="page-404.html"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >متداول</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="contact.html"
-                  class="nav-link mx-1 hover-gray rounded p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >ارتباط با مدیریت
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link mx-1 hover-gray rounded p-3"
+              <li class="nav-item hover-gray py-3">
+                <a href="blog.html" class="nav-link mx-1 hover-gray rounded p-none"
                   >بلاگ</a
                 >
               </li>
-              <li class="nav-item">
+              <li class="nav-item hover-gray py-3">
                 <a
                   href="page-404.html"
-                  class="nav-link mx-1 hover-gray rounded p-3"
+                  class="nav-link mx-1 rounded mr-2 p-none"
                   >درباره ما
                 </a>
               </li>
@@ -183,547 +202,544 @@
       </nav>
       <!-- end header -->
 
-      <!-- start main -->
-      <form
-        action="#"
-        id="d-none"
-        class="
-          container
-          mx-auto
-          
-          mt-3
-          shadow
-          px-3
-          p-1
-          rounded
-          d-flex
-          flex-row-reverse
-          border-bottom
-        "
-      >
-        <a href="page-404.html" class="d-inline ml-2 my-auto text-dark"><i class="fa fa-search"></i>
-        </a>
-        <input
-          type="search"
-          class="form-control dr border-0"
-          placeholder="جستجو در سایت"
-        />
-      </form>
-      <div
-        class="
-          container-fluid
-          d-flex
-          justify-content-center
-          row
-          mx-auto
-          flex-row-reverse
-        "
-      >
+     <!-- start main -->
+     <form
+     action="#"
+     id="d-none"
+     class="
+       container
+       mx-auto
+       bg-white
+       mt-3
+       shadow
+       px-3
+       p-1
+       rounded
+       d-flex
+       flex-row-reverse
+       border-bottom
+     "
+   >
+     <a href="page-404.html" class="d-inline ml-2 my-auto text-dark"><i class="fa fa-search"></i>
+     </a>
+     <input
+       type="search"
+       class="form-control dr border-0"
+       placeholder="جستجو در سایت"
+     />
+   </form>
+   <div class="container-fluid d-flex justify-content-center row mx-auto flex-row-reverse">
+
         <!-- start aside -->
-        <div class="aside mx-auto mt-2 mb-4 col-xl-3">
-          <form
-            action="#"
-            id="d-none-r"
-            class="
-              form
-              shadow
-              mt-2
-              mb-1
-              px-3
-              p-1
-              rounded
-              d-flex
-              flex-row-reverse
-              border-bottom
-            "
-          >
-            <a href="page-404.html" class="my-auto ml-2 text-dark"
-              ><i class="fa fa-search"></i
-            ></a>
-            <input
-              type="search"
-              class="form-control dr border-0"
-              placeholder="جستجو در سایت"
+     <div class="aside mx-auto mt-2 mb-4 col-xl-3">
+       <form
+         action="#"
+         id="d-none-r"
+         class="
+         bg-white
+           form
+           shadow
+           my-2
+           mb-1
+           px-3
+           p-1
+           rounded
+           d-flex
+           flex-row-reverse
+           border-bottom
+         "
+       >
+         <a href="page-404.html" class="my-auto ml-2 text-dark"
+           ><i class="fa fa-search"></i
+         ></a>
+         <input
+           type="search"
+           class="form-control dr border-0"
+           placeholder="جستجو در سایت"
+         />
+       </form>
+       <!-- start group -->
+       <div class="group dr my-3 bg-white shadow">
+         <div class="bg-dark p-2 d-flex">
+           <i
+             class="fa fa-bars text-light my-auto ml-2"
+             aria-hidden="true"
+           ></i>
+           <p class="my-auto text-light">دسته بندی ها</p>
+         </div>
+         <ul class="nav flex-column">
+           <li class="nav-item d-flex mx-2 font-sm">
+             <i class="fa fa-circle mt-3"></i>
+             <a href="page-404.html" class="nav-link text-dark"><p>اخبار و اطلاعات</p> </a>
+           </li>
+           <li class="nav-item d-flex mx-2 font-sm">
+             <i class="fa fa-circle mt-3"></i>
+             <a href="page-404.html" class="nav-link text-dark"><p>آموزش ها</p> </a>
+           </li>
+           <li class="nav-item d-flex mx-2 font-sm">
+             <i class="fa fa-circle mt-3"></i>
+             <a href="page-404.html" class="nav-link text-dark"><p>سوالات و مشکلات</p> </a>
+           </li>
+           <li class="nav-item d-flex mx-2 font-sm">
+             <i class="fa fa-circle mt-3"></i>
+             <a href="contact.html" class="nav-link text-dark"><p>ارتباط با مدیریت</p> </a>
+           </li>
+         </ul>
+       </div>
+       <!-- end group -->
+
+         <!-- start favorite -->
+         <div class="shadow my-3 bg-white">
+          <div class="bg-dark py-1 px-2 d-flex flex-row-reverse">
+            <img
+              class="img-fluid my-auto ml-2"
+              src="img/blog-img/camera.svg"
+              alt="camera"
+              width="25px"
+              height="25px"
             />
-          </form>
-          <!-- start group -->
-          <div class="group dr py-2 shadow">
-            <div class="bg-dark p-2 d-flex">
-              <i
-                class="fa fa-bars text-light my-auto ml-2"
-                aria-hidden="true"
-              ></i>
-              <p class="my-auto text-light">دسته بندی ها</p>
-            </div>
-            <ul class="nav flex-column">
-              <li class="nav-item d-flex mx-2 font-sm">
-                <i class="fa fa-circle mt-3"></i>
-                <a href="page-404.html" class="nav-link text-dark"><p>اخبار و اطلاعات</p> </a>
-              </li>
-              <li class="nav-item d-flex mx-2 font-sm">
-                <i class="fa fa-circle mt-3"></i>
-                <a href="page-404.html" class="nav-link text-dark"><p>آموزش ها</p> </a>
-              </li>
-              <li class="nav-item d-flex mx-2 font-sm">
-                <i class="fa fa-circle mt-3"></i>
-                <a href="page-404.html" class="nav-link text-dark"><p>سوالات و مشکلات</p> </a>
-              </li>
-              <li class="nav-item d-flex mx-2 font-sm">
-                <i class="fa fa-circle mt-3"></i>
-                <a href="contact.html" class="nav-link text-dark"><p>ارتباط با مدیریت</p> </a>
-              </li>
-            </ul>
+            <p class="text-light my-auto py-1">محبوبترین ها</p>
           </div>
-          <!-- end group -->
-
-          <!-- start favorite -->
-          <div class="shadow py-2">
-            <div class="bg-dark py-1 px-2 d-flex flex-row-reverse">
-              <img
-                class="img-fluid my-auto ml-2"
-                src="img/blog-img/camera.svg"
-                alt="camera"
-                width="25px"
-                height="25px"
-              />
-              <p class="text-light my-auto py-1">محبوبترین ها</p>
-            </div>
-            <ul class="nav flex-column">
-              <li class="nav-item py-2 p-3 hover-lightgray">
-              <div class="media ">
-              <div class="media-body">
-                    <a href="page-404.html" class="text-dark dr"
-                      ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
-                    >
-                    <p>
-                      <small class="text-secondary mb-3"
-                        >معین اکبری-یکشنبه 25 دی 1395</small
-                      >
-                    </p>
-                  </div>
-                  <a href="page-404.html" class="my-auto mx-2"
-                    ><img
-                      class="rounded-circle zoom img-fluid"
-                      width="70px"
-                      height="70px"
-                      src="img/blog-img/girl.png"
-                      alt=""
-                  /></a>
-                </div>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li class="nav-item py-2 p-3 hover-lightgray">
-                <div class="media ">
-                  <div class="media-body">
-                    <a href="page-404.html" class="text-dark dr"
-                      ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
-                    >
-                    <p>
-                      <small class="text-secondary mb-3"
-                        >معین اکبری-یکشنبه 25 دی 1395</small
-                      >
-                    </p>
-                  </div>
-
-                  <a href="page-404.html" class="mx-2 my-auto">
-                    <img
-                      class="rounded-circle zoom img-fluid"
-                      width="70px"
-                      height="70px"
-                      src="img/blog-img/bitcoin-2.png"
-                      alt=""
-                  /></a>
-                </div>
-              </li>
-              <div class="dropdown-divider"></div>
-
-              <li class="nav-item py-2 p-3 hover-lightgray">
-                <div class="media ">
-                  <div class="media-body">
-                    <a href="page-404.html" class="text-dark dr"
+          <ul class="nav flex-column">
+            <li class="nav-item py-2 p-3 hover-lightgray">
+            <div class="media ">
+            <div class="media-body">
+                  <a href="page-404.html" class="text-dark dr"
                     ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
                   >
-                    <p>
-                      <small class="text-secondary mb-3"
-                        >معین اکبری-یکشنبه 25 دی 1395</small
-                      >
-                    </p>
-                  </div>
-
-                  <a href="page-404.html" class="mx-2 my-auto">
-                    <img
-                      class="rounded-circle zoom img-fluid"
-                      width="70px"
-                      height="70px"
-                      src="img/blog-img/workplace.png"
-                      alt=""
-                  /></a>
-                </div>
-              </li>
-              <div class="dropdown-divider"></div>
-
-              <li class="nav-item py-2 p-3 hover-lightgray">
-                <div class="media ">
-                  <div class="media-body">
-                    <a href="page-404.html" class="text-dark dr"
-                      ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
+                  <p>
+                    <small class="text-secondary mb-3"
+                      >معین اکبری-یکشنبه 25 دی 1395</small
                     >
-                    <p>
-                      <small class="text-secondary mb-3"
-                        >معین اکبری-یکشنبه 25 دی 1395</small
-                      >
-                    </p>
-                  </div>
-
-                  <a href="page-404.html" class="mx-2 my-auto">
-                    <img
-                      class="rounded-circle zoom img-fluid"
-                      width="70px"
-                      height="70px"
-                      src="img/blog-img/bitcoin.png"
-                      alt=""
-                  /></a>
+                  </p>
                 </div>
-              </li>          
-            </ul>
-          </div>
-          <!-- end favorite -->
+                <a href="page-404.html" class="fluid rounded-circle my-auto mx-2"
+                  ><img
+                    class=" zoom img-fluid"
+                    width="70px"
+                    height="70px"
+                    src="img/blog-img/girl.png"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+            <div class="dropdown-divider"></div>
+            <li class="nav-item py-2 p-3 hover-lightgray">
+              <div class="media ">
+                <div class="media-body">
+                  <a href="page-404.html" class="text-dark dr"
+                    ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
+                  >
+                  <p>
+                    <small class="text-secondary mb-3"
+                      >معین اکبری-یکشنبه 25 دی 1395</small
+                    >
+                  </p>
+                </div>
+
+                <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
+                  <img
+                    class=" zoom img-fluid"
+                    width="70px"
+                    height="70px"
+                    src="img/blog-img/bitcoin-2.png"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item py-2 p-3 hover-lightgray">
+              <div class="media ">
+                <div class="media-body">
+                  <a href="page-404.html" class="text-dark dr"
+                  ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
+                >
+                  <p>
+                    <small class="text-secondary mb-3"
+                      >معین اکبری-یکشنبه 25 دی 1395</small
+                    >
+                  </p>
+                </div>
+
+                <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
+                  <img
+                    class=" zoom img-fluid"
+                    width="70px"
+                    height="70px"
+                    src="img/blog-img/workplace.png"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+            <div class="dropdown-divider"></div>
+
+            <li class="nav-item py-2 p-3 hover-lightgray">
+              <div class="media ">
+                <div class="media-body">
+                  <a href="page-404.html" class="text-dark dr"
+                    ><p>تمام خدمات سایت بدون هیج هزینه...</p></a
+                  >
+                  <p>
+                    <small class="text-secondary mb-3"
+                      >معین اکبری-یکشنبه 25 دی 1395</small
+                    >
+                  </p>
+                </div>
+
+                <a href="page-404.html" class="fluid rounded-circle mx-2 my-auto">
+                  <img
+                    class=" zoom img-fluid"
+                    width="70px"
+                    height="70px"
+                    src="img/blog-img/bitcoin.png"
+                    alt=""
+                /></a>
+              </div>
+            </li>
+          </ul>
         </div>
+        <!-- end favorite -->
+     </div>
 
-        <!-- end aside -->
+     <!-- end aside -->
 
 
-          <!-- start content -->
-          <div class="content col-xl-9 w-100">
-            <div class="media-parent shadow pb-2 m-3">
-              <div class="media-header bg-primary text-light p-2">
-                <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
-              </div>
-              <div class="media row dr px-2 mt-2">
-                <img
-                  src="img/blog-img/first-img.jpg"
-                  alt="first-img"
-                  class="img-fluid col-lg-2"
-                />
-                <div
-                  class="
-                    media-body
-                    col-lg-10
-                    d-flex
-                    flex-column
-                    justify-content-between
-                  "
-                >
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                    استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
-                    مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
-                    متخصصان را می طلبد
-                  </p>
-                  <div class="row mt-3">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">معین کبری</p>
-                      <i
-                        class="fas fa-user-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">فروردین 95</p>
-                      <i
-                        class="fa fa-clock-o text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-  
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">3 نظر</p>
-                      <i
-                        class="fas fa-comment-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">74 بازدید</p>
-                      <i
-                        class="fa fa-eye text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
-                      ادامه مطلب
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="media-parent shadow pb-2 m-3">
-              <div class="media-header bg-primary text-light p-2">
-                <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
-              </div>
-              <div class="media row dr px-2 mt-2">
-                <img
-                  src="img/blog-img/second-img.jpg"
-                  alt="first-img"
-                  class="img-fluid col-lg-2"
-                />
-                <div
-                  class="
-                    media-body
-                    col-lg-10
-                    d-flex
-                    flex-column
-                    justify-content-between
-                  "
-                >
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                    استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
-                    مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
-                    متخصصان را می طلبد
-                  </p>
-                  <div class="row mt-3">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">معین کبری</p>
-                      <i
-                        class="fas fa-user-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">فروردین 95</p>
-                      <i
-                        class="fa fa-clock-o text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-  
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">3 نظر</p>
-                      <i
-                        class="fas fa-comment-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">74 بازدید</p>
-                      <i
-                        class="fa fa-eye text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                               <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
-                      ادامه مطلب
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="media-parent shadow pb-2 m-3">
-              <div class="media-header bg-primary text-light p-2">
-                <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
-              </div>
-              <div class="media row dr px-2 mt-2">
-                <img
-                  src="img/blog-img/third-img.jpg"
-                  alt="first-img"
-                  class="img-fluid col-lg-2"
-                />
-                <div
-                  class="
-                    media-body
-                    col-lg-10
-                    d-flex
-                    flex-column
-                    justify-content-between
-                  "
-                >
-                  <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                    استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
-                    مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
-                    متخصصان را می طلبد
-                  </p>
-                  <div class="row mt-3">
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">معین کبری</p>
-                      <i
-                        class="fas fa-user-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">فروردین 95</p>
-                      <i
-                        class="fa fa-clock-o text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-  
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">3 نظر</p>
-                      <i
-                        class="fas fa-comment-alt text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                    <div
-                      class="
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        border-right
-                        mt-2
-                        col-xl-2
-                        flex-row-reverse
-                      "
-                    >
-                      <p class="my-auto">74 بازدید</p>
-                      <i
-                        class="fa fa-eye text-primary my-auto ml-1"
-                        aria-hidden="true"
-                      ></i>
-                    </div>
-                               <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
-                      ادامه مطلب
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-between">
-              <ul class="pagination">
-                <li class="page-item sm">
-                  <a href="page-404.html" class="page-link circle"><<</a>
-                </li>
-                <li class="page-item sm">
-                  <a href="page-404.html" class="page-link circle">>></a>
-                </li>
-              </ul>
-              <ul class="pagination">
-                <li class="page-item mx-1"><a class="page-link" href="#">1</a></li>
-                <li class="page-item mx-1"><a class="page-link" href="#">2</a></li>
-                <li class="page-item mx-1"><a class="page-link" href="#">3</a></li>
-                <li class="page-item mx-1"><a class="page-link" href="#">4</a></li>
-                <li class="page-item mx-1">
-                  <a class="page-link" href="#">5</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- end content -->
-    </div>
-    <!-- end main -->
+     <!-- start content -->
+     <div class="content col-xl-9 w-100">
+       <div class="media-parent shadow pb-2 m-3 bg-white">
+         <div class="media-header bg-primary text-light p-2">
+           <p class="my-auto">...چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی</p>
+         </div>
+         <div class="media row dr px-2 mt-2">
+           <a href="page.html" class=" col-lg-2"><img
+             src="img/blog-img/first-img.jpg"
+             alt="first-img"
+             class="img-fluid w-100"
+           /></a>
+           <div
+             class="
+               media-body
+               col-lg-10
+               d-flex
+               flex-column
+               justify-content-between
+             "
+           >
+             <p>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+               استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
+               مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
+               متخصصان را می طلبد
+             </p>
+             <div class="row mt-3 dr">
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">معین کبری</p>
+                 <i
+                   class="fas fa-user-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">فروردین 95</p>
+                 <i
+                   class="fa fa-clock-o text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">3 نظر</p>
+                 <i
+                   class="fas fa-comment-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">74 بازدید</p>
+                 <i
+                   class="fa fa-eye text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
+                 ادامه مطلب
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="media-parent shadow pb-2 m-3 bg-white">
+         <div class="media-header bg-primary text-light p-2">
+           <p class="my-auto dr">چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی...</p>
+         </div>
+         <div class="media row dr px-2 mt-2">
+           <a href="page.html" class="col-lg-2">
+           <img
+             src="img/blog-img/second-img.jpg"
+             alt="first-img"
+             class="img-fluid w-100"
+           /></a>
+           <div
+             class="
+               media-body
+               col-lg-10
+               d-flex
+               flex-column
+               justify-content-between
+             "
+           >
+             <p>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+               استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
+               مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
+               متخصصان را می طلبد
+             </p>
+             <div class="row mt-3">
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">معین کبری</p>
+                 <i
+                   class="fas fa-user-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">فروردین 95</p>
+                 <i
+                   class="fa fa-clock-o text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">3 نظر</p>
+                 <i
+                   class="fas fa-comment-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">74 بازدید</p>
+                 <i
+                   class="fa fa-eye text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+                          <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
+                 ادامه مطلب
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="media-parent shadow pb-2 m-3 bg-white">
+         <div class="media-header bg-primary text-light p-2">
+           <p class="my-auto dr">چه بخت بلندی چه ماهی چه ماهی چه حال عجیبی چه حال مستی...</p>
+         </div>
+         <div class="media row dr px-2 mt-2">
+           <a href="page.html" class="col-lg-2">
+           <img
+             src="img/blog-img/third-img.jpg"
+             alt="first-img"
+             class="img-fluid w-100"
+           /></a>
+           <div
+             class="
+               media-body
+               col-lg-10
+               d-flex
+               flex-column
+               justify-content-between
+             "
+           >
+             <p>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+               استفاده از طراحان گرافیک است. چاپگر ها و متون بلکه روزنامه و
+               مجله در ستون و سطر آنچنان که آینده شناخت فراوان جامعه و
+               متخصصان را می طلبد
+             </p>
+             <div class="row mt-3">
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">معین کبری</p>
+                 <i
+                   class="fas fa-user-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">فروردین 95</p>
+                 <i
+                   class="fa fa-clock-o text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">3 نظر</p>
+                 <i
+                   class="fas fa-comment-alt text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+               <div
+                 class="
+                   d-flex
+                   justify-content-center
+                   align-items-center
+                   border-none
+                   mt-2
+                   col-xl-2
+                   flex-row-reverse
+                 "
+               >
+                 <p class="my-auto">74 بازدید</p>
+                 <i
+                   class="fa fa-eye text-primary my-auto ml-1"
+                   aria-hidden="true"
+                 ></i>
+               </div>
+                          <a href="page.html" class="btn btn-success mx-4 mt-3 col-xl-3">
+                 ادامه مطلب
+               </a>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="d-flex justify-content-between mx-2">
+         <ul class="pagination">
+           <li class="page-item sm mx-1">
+             <a href="page-404.html" class="page-link circle hover-blue-gray text-light px-2"><<</a>
+           </li>
+           <li class="page-item sm mx-1">
+             <a href="page-404.html" class="page-link circle px-2 hover-blue-gray text-light">>></a>
+           </li>
+         </ul>
+         <ul class="pagination dr">
+           <li class="page-item mx-1"><a class="page-link" href="#">1</a></li>
+           <li class="page-item mx-1 active"><a class="page-link" href="#">2</a></li>
+           <li class="page-item mx-1"><a class="page-link" href="#">3</a></li>
+           <li class="page-item mx-1"><a class="page-link" href="#">4</a></li>
+           <li class="page-item mx-1">
+             <a class="page-link" href="#">5</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <!-- end content -->
+
+    
+   </div>
+   <!-- end main -->
 
    <!-- start footer -->
    <div class="footer p-5 position-relative">
@@ -762,26 +778,26 @@
         </div>
         <div class="d-flex flex-column align-items-end">
           <div class="d-flex my-1">
-            <p class="text-light">.قیمت محصولات سایت بروزسانی شدند</p>
-            <button class="btn btn-primary dr ml-2 h-100 p-0">
+            <p class="text-light p-sm">.قیمت محصولات سایت بروزسانی شدند</p>
+            <button class="btn btn-primary dr ml-2 p-sm-btn">
               17 دیماه 1395
             </button>
           </div>
           <div class="d-flex my-1">
-            <p class="text-light">جرا احراز هویت ؟</p>
-            <button class="btn btn-primary dr ml-2 h-100 p-0">
+            <p class="text-light p-sm">جرا احراز هویت ؟</p>
+            <button class="btn btn-primary dr ml-2 p-sm-btn">
               17 دیماه 1395
             </button>
           </div>
           <div class="d-flex my-1">
-            <p class="text-light">نحوه ی خرید و فروش پرفکت مانی</p>
-            <button class="btn btn-primary dr ml-2 h-100 p-0">
+            <p class="text-light p-sm">نحوه ی خرید و فروش پرفکت مانی</p>
+            <button class="btn btn-primary dr ml-2 p-sm-btn">
               17 دیماه 1395
             </button>
           </div>
           <div class="d-flex my-1">
-            <p class="text-light">سوالات بیت کوینی</p>
-            <button class="btn btn-primary dr ml-2 h-100 p-0">
+            <p class="text-light p-sm">سوالات بیت کوینی</p>
+            <button class="btn btn-primary dr ml-2 p-sm-btn">
               17 دیماه 1395
             </button>
           </div>
