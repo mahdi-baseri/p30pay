@@ -239,6 +239,11 @@ body {
     margin: 0 auto !important;
   }
 }
+@media screen and (max-width: 500px) {
+  .date-time div {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width:1200px) {
   .p-none{
     padding: 8px !important;
