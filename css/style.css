@@ -153,6 +153,7 @@ body {
   width: 100%;
   height: 100%;
   transition: .5s ease;
+  cursor: pointer;
   opacity:0;
   color: white;
   font-size: 20px;
@@ -242,6 +243,9 @@ body {
 @media screen and (max-width: 500px) {
   .date-time div {
     margin: 0 auto;
+  }
+  .overlay{
+    font-size: 15px;
   }
 }
 @media screen and (max-width:1200px) {

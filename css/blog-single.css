@@ -9,8 +9,16 @@ body{
   #d-none {
     display: none !important;
   }
+  .d-column{
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
 @media screen and (max-width: 700px) {
+  .d-column{
+    display: flex !important;
+    flex-direction: column !important;
+  }
     #d-none {
       display: flex !important;
     }
