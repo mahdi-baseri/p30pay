@@ -95,6 +95,15 @@ body a {
   background-color: #1172d3;
   direction: rtl;
 }
+.bg-green{
+  background-color: limegreen !important;
+}
+.bg-green:hover{
+  background-color: rgb(43, 177, 43) !important;
+
+  
+
+}
 #navbar .nav-link {
   color: white;
 }
