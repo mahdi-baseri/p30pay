@@ -106,10 +106,11 @@ body {
   color: #7f7f7f;
 }
 .widget .card {
+  border: none !important;
+
 }
 .widget .card:hover {
   background-color: #f7f7f7;
-  border-bottom: 1px solid rgb(207, 205, 205) !important;
 }
 /* end widget */
 /* start paragraph */
