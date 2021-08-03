@@ -27,6 +27,7 @@ body {
 }
 .hover-blue:hover {
   background-color: #1671cb !important;
+  transition: 1s !important;
 }
 .hover-none:hover {
   background-color: transparent !important;
