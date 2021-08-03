@@ -47,6 +47,7 @@ body {
 }
 .hover-blue:hover {
   background-color: #1671cb !important;
+  transition: 0.6s;
 }
 .hover-none:hover {
   background-color: transparent !important;
