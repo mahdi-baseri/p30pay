@@ -35,6 +35,9 @@ body {
 .large {
   font-size: large;
 }
+.logo-size{
+  font-size: medium;
+}
 .direction {
   direction: rtl;
 }
@@ -168,5 +171,8 @@ body {
 @media screen and (max-width: 500px) {
   .date-time div {
     margin: 0 auto;
+  }
+  .logo-size{
+    font-size: small;
   }
 }
