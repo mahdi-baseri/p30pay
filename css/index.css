@@ -155,10 +155,7 @@ body {
   body {
     text-align: center !important;
   }
-  .text-size {
-    font-size: small;
-    width: 100% !important;
-  }
+
 }
 @media screen and (max-width: 992px) {
   .social-media {
@@ -172,7 +169,5 @@ body {
   .date-time div {
     margin: 0 auto;
   }
-  .logo-size{
-    font-size: small;
-  }
+ 
 }
