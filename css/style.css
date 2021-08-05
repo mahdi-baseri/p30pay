@@ -240,6 +240,9 @@ body {
   .border-none{
     border-right: none !important;
   }
+  .logo-size{
+    font-size: medium !important;
+  }
 }
 @media screen and (max-width: 992px) {
   .social-media {
@@ -255,6 +258,9 @@ body {
   }
   .overlay{
     font-size: 15px;
+  }
+  .logo-size{
+    font-size: small !important;
   }
 }
 @media screen and (max-width:1200px) {
