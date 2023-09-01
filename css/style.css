@@ -273,3 +273,7 @@ body {
   
   
 }
+.footer-bottom{
+  display: flex;
+  flex-direction: column !important;
+}
